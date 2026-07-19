@@ -58,6 +58,7 @@ stream = ExtResource("9_vtaks")
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="Sounds" unique_id=12648337]
 stream = ExtResource("10_vtaks")
 volume_db = -4.483
+autoplay = true
 
 [node name="Background" parent="." unique_id=7912076 instance=ExtResource("11_kvpfn")]
 z_index = -1
