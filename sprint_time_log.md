@@ -1,8 +1,8 @@
 # CSE 310 - Sprint Time Log
 
-Name:
+Name: Tanner Wyman
 
-Sprint #:
+Sprint #: 5
 
 ## Instructions
 
@@ -32,6 +32,7 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |7/9/2026  |          |IM      |                                            |1.5 hours    |
 |7/13/2026 |          |IM      |                                            |45 mins      |
 |7/16/2026 |          |IM      |                                            |2 hours      |
+|7/18/2026 |          |IM      |                                            |2 hours      |
 
 _Note: Add more rows as needed._
 
@@ -39,7 +40,7 @@ _Note: Add more rows as needed._
 
 |Categroy                       |Total Time (Hours:Minutes)|
 |-------------------------------|:------------------------:|
-|IM - Individual Module         |                          |
+|IM - Individual Module         |10:45                     |
 |TP - Team Project              |                          |
 |MTG - Class Meetings           |                          |
 |**TOTAL**                      |                          |
