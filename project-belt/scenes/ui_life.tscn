@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bh7nudvuwavg0"]
+
+[ext_resource type="Texture2D" uid="uid://dhknm3utb7xda" path="res://assets/images/playerLife1_blue.png" id="1_fjxat"]
+
+[node name="UI Life" type="TextureRect" unique_id=351018878]
+texture_filter = 1
+offset_right = 33.0
+offset_bottom = 26.0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_fjxat")

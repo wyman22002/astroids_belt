@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://vr2prfmf8wxc"]
+
+[ext_resource type="Script" uid="uid://lnsk3v5gq563" path="res://scripts/hud.gd" id="1_ahhtf"]
+[ext_resource type="FontFile" uid="uid://c0tyhymxn7yk" path="res://assets/fonts/undertale-deltarune-text-font-extended.otf" id="2_oo0fn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ysmq"]
+font = ExtResource("2_oo0fn")
+font_size = 48
+
+[node name="HUD" type="Control" unique_id=1209352375]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ahhtf")
+
+[node name="Score" type="Label" parent="." unique_id=15340374]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 3.0
+offset_right = 369.0
+offset_bottom = 99.0
+text = "SCORE: 9999"
+label_settings = SubResource("LabelSettings_5ysmq")
+
+[node name="Lives" type="HBoxContainer" parent="." unique_id=636310202]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 88.0
+offset_right = 57.0
+offset_bottom = 114.0
+scale = Vector2(2, 2)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://i3hi80osspgo"]
+
+[sub_resource type="Curve2D" id="Curve2D_bynyw"]
+_data = {
+"points": PackedVector2Array(4.0021243, -0.048608795, -4.0021243, 0.048608795, -291.25006, -237.50002, 0, 0, 0, 0, 873.7498, -238.75002, 0, 0, 0, 0, 1567.4998, -235.00002, 0, 0, 0, 0, 1562.4998, 952.4999, 0, 0, 0, 0, -308.75006, 951.2499, 0, 0, 0, 0, -297.50006, -191.25003)
+}
+point_count = 6
+
+[node name="AsteroidSpawnZone" type="Path2D" unique_id=1819236661]
+curve = SubResource("Curve2D_bynyw")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=930677413]
+position = Vector2(-191.22684, 951.3283)
+rotation = -3.1409247
+progress = 4800.0063
+
+[node name="Marker2D" type="Marker2D" parent="PathFollow2D" unique_id=1878844069]

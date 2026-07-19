@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dofudhu8n6y45"]
+
+[ext_resource type="PackedScene" uid="uid://bdso1x7fo5vhu" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://c8jpit3too6di" path="res://scripts/game.gd" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://i3hi80osspgo" path="res://scenes/asteroid_spawn_zone.tscn" id="3_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://vr2prfmf8wxc" path="res://scenes/hud.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://dwqotj8ioi3eq" path="res://scenes/game_over_screen.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://d21fckwjsc2wj" path="res://scenes/player_spawn_area.tscn" id="6_p57ef"]
+[ext_resource type="AudioStream" uid="uid://dm4ruo7o5d87g" path="res://assets/sound/sfx/sfx_laser1.ogg" id="7_u5sy4"]
+[ext_resource type="AudioStream" uid="uid://cf6rfco3wc3ix" path="res://assets/sound/sfx/smrpg_drop.ogg" id="8_0tnpc"]
+[ext_resource type="AudioStream" uid="uid://dgeol6v1vrgm8" path="res://assets/sound/sfx/sfx_lose.ogg" id="9_vtaks"]
+[ext_resource type="AudioStream" uid="uid://cj2017g33rjhu" path="res://assets/sound/music/08 Search the Ruined City.mp3" id="10_vtaks"]
+[ext_resource type="PackedScene" uid="uid://51c3d2shbn02" path="res://scenes/background.tscn" id="11_kvpfn"]
+
+[node name="Game" type="Node2D" unique_id=528253549]
+script = ExtResource("1_yqjtg")
+
+[node name="AsteroidSpawnTimer" type="Timer" parent="." unique_id=1280267326]
+wait_time = 3.0
+autostart = true
+
+[node name="Player" parent="." unique_id=1047514493 instance=ExtResource("1_uwrxv")]
+position = Vector2(640, 360)
+scale = Vector2(0.8, 0.8)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1504177255]
+
+[node name="AsteroidSpawnZone" parent="Player" unique_id=1819236661 instance=ExtResource("3_kvpfn")]
+position = Vector2(-644.99994, -347.49997)
+
+[node name="Lasers" type="Node" parent="." unique_id=2144130223]
+
+[node name="Asteroids" type="Node" parent="." unique_id=1503653372]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1292487550]
+
+[node name="HUD" parent="UI" unique_id=1209352375 instance=ExtResource("4_lbhrr")]
+
+[node name="GameOverScreen" parent="UI" unique_id=1605525148 instance=ExtResource("5_iywne")]
+visible = false
+
+[node name="PlayerSpawnPos" type="Node2D" parent="." unique_id=440837929]
+position = Vector2(640, 360)
+
+[node name="PlayerSpawnArea" parent="PlayerSpawnPos" unique_id=1771997531 instance=ExtResource("6_p57ef")]
+
+[node name="Sounds" type="Node" parent="." unique_id=1906010664]
+
+[node name="LaserSound" type="AudioStreamPlayer2D" parent="Sounds" unique_id=320749483]
+stream = ExtResource("7_u5sy4")
+
+[node name="AseroidHitSound" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1059199051]
+stream = ExtResource("8_0tnpc")
+
+[node name="PlayerDieSound" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1912278820]
+stream = ExtResource("9_vtaks")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="Sounds" unique_id=12648337]
+stream = ExtResource("10_vtaks")
+volume_db = -4.483
+
+[node name="Background" parent="." unique_id=7912076 instance=ExtResource("11_kvpfn")]
+z_index = -1
+
+[connection signal="timeout" from="AsteroidSpawnTimer" to="." method="_on_asteroid_spawn_timer_timeout"]
+[connection signal="laser_shot" from="Player" to="." method="_on_player_laser_shot"]

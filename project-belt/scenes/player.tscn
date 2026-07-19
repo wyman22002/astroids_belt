@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bdso1x7fo5vhu"]
+
+[ext_resource type="Texture2D" uid="uid://cftia5b65uqhf" path="res://assets/images/playerShip1_blue.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://crsgmtjetnw5h" path="res://scripts/player.gd" id="1_g2els"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
+size = Vector2(84, 35)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1047514493]
+script = ExtResource("1_g2els")
+rotation_speed = 200
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=850129939]
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=384023421]
+visible = false
+position = Vector2(0, 9.5)
+shape = SubResource("RectangleShape2D_3vyb7")
+
+[node name="Muzzle" type="Node2D" parent="." unique_id=2086372104]
+position = Vector2(0, -37)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1980783063]
+position = Vector2(2.075487, 7.865375)
+build_mode = 1
+polygon = PackedVector2Array(-16.075487, 17.134624, -45.075485, 13.1346245, -46.075485, -6.865375, -37.075485, -3.865375, -12.075487, -17.865376, -8.075487, -43.865376, 3.924513, -43.865376, 7.924513, -17.865376, 32.924515, -3.865375, 41.924515, -4.865375, 40.924515, 10.1346245, 9.924513, 17.134624, 3.924513, 28.134624, -9.075487, 28.134624)

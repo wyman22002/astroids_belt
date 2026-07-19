@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://51c3d2shbn02"]
+
+[ext_resource type="Texture2D" uid="uid://sootg47pylio" path="res://assets/images/blue.png" id="1_bkp1e"]
+
+[node name="Background" type="Node2D" unique_id=7912076]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=2109684160]
+repeat_size = Vector2(256, 256)
+autoscroll = Vector2(-10, 0)
+repeat_times = 9
+ignore_camera_scroll = true
+
+[node name="Blue" type="Sprite2D" parent="Parallax2D" unique_id=1814833790]
+texture_filter = 1
+texture = ExtResource("1_bkp1e")
