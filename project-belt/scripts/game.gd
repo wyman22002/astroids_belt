@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var asteroid_scenes: Array[PackedScene] = []
+#@export var asteroid_scenes: Array[PackedScene] = []
 
 @onready var lasers = $Lasers
 @onready var player = $Player

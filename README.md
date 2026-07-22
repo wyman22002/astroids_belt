@@ -1,6 +1,6 @@
 # Project-Belt
 
-Add a description of your project here.
+A prototype for an expanded version of the classic video game "Astroids"
 
 ## Instructions for Build and Use
 

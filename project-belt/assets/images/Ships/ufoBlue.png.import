@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1flbdvc402u4"
-path="res://.godot/imported/playerShip3_orange.png-e4ed33549355d0dcb5fdf89139b46102.ctex"
+uid="uid://ba2he1vgf3rbi"
+path="res://.godot/imported/ufoBlue.png-e4042011ade00b47f6725660b3867f2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/playerShip3_orange.png"
-dest_files=["res://.godot/imported/playerShip3_orange.png-e4ed33549355d0dcb5fdf89139b46102.ctex"]
+source_file="res://assets/images/Ships/ufoBlue.png"
+dest_files=["res://.godot/imported/ufoBlue.png-e4042011ade00b47f6725660b3867f2e.ctex"]
 
 [params]
 

@@ -5,11 +5,12 @@
 [node name="Background" type="Node2D" unique_id=7912076]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=2109684160]
+scroll_offset = Vector2(-10, 9)
 repeat_size = Vector2(256, 256)
 autoscroll = Vector2(-10, 0)
 repeat_times = 9
-ignore_camera_scroll = true
 
 [node name="Blue" type="Sprite2D" parent="Parallax2D" unique_id=1814833790]
 texture_filter = 1
+position = Vector2(138, 375)
 texture = ExtResource("1_bkp1e")

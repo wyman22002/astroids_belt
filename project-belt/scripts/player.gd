@@ -27,6 +27,8 @@ func _process(delta):
 			await get_tree().create_timer(rate_of_fire).timeout
 			shoot_cd = false
 	
+	#if Input.action_press("move_forward"):
+		#$CPUParticles2D.emitting = true
 
 func _physics_process(delta):
 	if !alive: return

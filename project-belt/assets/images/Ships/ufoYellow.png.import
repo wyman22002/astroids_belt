@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db2cwgkmvlvx"
-path="res://.godot/imported/meteorGrey_big3.png-0d3d75c9eb8ac870b0fe37fa6b12da14.ctex"
+uid="uid://3ekolhdca2on"
+path="res://.godot/imported/ufoYellow.png-6a219ebfec83e14ba723ac4327f77b67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/meteorGrey_big3.png"
-dest_files=["res://.godot/imported/meteorGrey_big3.png-0d3d75c9eb8ac870b0fe37fa6b12da14.ctex"]
+source_file="res://assets/images/Ships/ufoYellow.png"
+dest_files=["res://.godot/imported/ufoYellow.png-6a219ebfec83e14ba723ac4327f77b67.ctex"]
 
 [params]
 

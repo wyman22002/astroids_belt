@@ -39,11 +39,6 @@ position = Vector2(-644.99994, -347.49997)
 [node name="GameOverScreen" parent="UI" unique_id=1605525148 instance=ExtResource("5_iywne")]
 visible = false
 
-[node name="PlayerSpawnPos" type="Node2D" parent="." unique_id=440837929]
-position = Vector2(640, 360)
-
-[node name="PlayerSpawnArea" parent="PlayerSpawnPos" unique_id=1771997531 instance=ExtResource("6_p57ef")]
-
 [node name="Sounds" type="Node" parent="." unique_id=1906010664]
 
 [node name="LaserSound" type="AudioStreamPlayer2D" parent="Sounds" unique_id=320749483]
@@ -62,6 +57,12 @@ autoplay = true
 
 [node name="Background" parent="." unique_id=7912076 instance=ExtResource("11_kvpfn")]
 z_index = -1
+
+[node name="PlayerSpawnPos" type="Node2D" parent="." unique_id=440837929]
+position = Vector2(640, 360)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="PlayerSpawnArea" parent="PlayerSpawnPos" unique_id=1771997531 instance=ExtResource("6_p57ef")]
 
 [connection signal="timeout" from="AsteroidSpawnTimer" to="." method="_on_asteroid_spawn_timer_timeout"]
 [connection signal="laser_shot" from="Player" to="." method="_on_player_laser_shot"]
